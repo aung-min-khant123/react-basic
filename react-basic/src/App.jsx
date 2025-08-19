@@ -1,5 +1,7 @@
 import Buttom from "./Buttom"
 import ApiData from "./components/ApiData"
+import ApiData2 from "./components/ApiData2"
+import ApiData3 from "./components/ApiData3"
 import CRUD from "./components/CRUD"
 import SimpleUseEffect from "./components/Hooks/UseEffect/SimpleUseEffect"
 import Clock from "./components/Hooks/UseState/Clock"
@@ -40,7 +42,9 @@ function App() {
         {/* <SelectImg2></SelectImg2> 
        <SimpleUseEffect></SimpleUseEffect> */}
        {/* <Clock></Clock> */}
-       <ApiData></ApiData>
+        {/* <ApiData></ApiData>  */}
+        {/* <ApiData2></ApiData2>  */}
+        <ApiData3></ApiData3>
       {/* <ComponentA/> */}
     </>
   )

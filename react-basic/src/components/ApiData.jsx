@@ -27,11 +27,11 @@ function ApiData() {
     <>
         <h2>API Data</h2>
 
-        {posts.map((post, index) => {
+      {posts.map((post, index) => {
             return <h3 key={index}>{post.title}</h3>;
-        })}
+        })} 
     </>
   )
 }
 
-export default ApiData
+export default ApiData;
