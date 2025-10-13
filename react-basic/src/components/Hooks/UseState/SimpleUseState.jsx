@@ -10,4 +10,4 @@ function SimpleUseState() {
   );
 }
 
-export default SimpleUseState
+export default SimpleUseState;

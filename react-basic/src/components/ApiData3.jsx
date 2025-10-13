@@ -36,7 +36,7 @@ function ApiData3() {
         } */}
         {
           carts.map((cart, index) => {
-            return  <h3 key={index}>{cart.id}</h3> 
+            return  <h3 key={index} >{cart.id}</h3> 
             
           })
         }
@@ -51,7 +51,13 @@ function ApiData3() {
             return  <h3 key={index}>{cart.userId}</h3> 
             
           })
-        }
+        } 
+        {
+          carts.map((cart, index) => {
+            return  <h3 key={index}>{cart.discountedTotal}</h3> 
+            
+          })
+        } 
         </>
   ); 
 }

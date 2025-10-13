@@ -1,2 +1,0 @@
-# react-testing
-react-folder

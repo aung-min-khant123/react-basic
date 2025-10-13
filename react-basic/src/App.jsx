@@ -1,8 +1,10 @@
+import { Route, Routes } from "react-router-dom"
 import Buttom from "./Buttom"
 import ApiData from "./components/ApiData"
 import ApiData2 from "./components/ApiData2"
 import ApiData3 from "./components/ApiData3"
 import CRUD from "./components/CRUD"
+import HOC from "./components/HOC/HOC"
 import SimpleUseEffect from "./components/Hooks/UseEffect/SimpleUseEffect"
 import Clock from "./components/Hooks/UseState/Clock"
 import Dynamic from "./components/Hooks/UseState/Dynamic"
@@ -12,10 +14,15 @@ import SelectImage from "./components/Hooks/UseState/SelectImage"
 import SelectImg2 from "./components/Hooks/UseState/SelectImg2"
 import SimpleUseState from "./components/Hooks/UseState/SimpleUseState"
 import Shop from "./components/props/Shop"
+import VideoPlayer from "./components/UseRef/VideoPlayer"
 import WelcomeClass from "./components/WelcomeClass"
 import WelcomeFunc from "./components/WelcomeFunc"
 import Logo from "./Logo"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
 import { customStyles } from "./utils/style"
+import Hooks from "./pages/Hooks"
+import HookDetail from "./pages/HookDetail"
 
 
 function App() {
@@ -39,13 +46,25 @@ function App() {
       {/* <Dynamic/> */}
       {/* <CRUD></CRUD> */}
        {/* <SelectImage></SelectImage>  */}
-        {/* <SelectImg2></SelectImg2> 
-       <SimpleUseEffect></SimpleUseEffect> */}
+        {/* <SelectImg2></SelectImg2>  */}
+       {/* <SimpleUseEffect></SimpleUseEffect> */}
        {/* <Clock></Clock> */}
         {/* <ApiData></ApiData>  */}
-        {/* <ApiData2></ApiData2>  */}
-        <ApiData3></ApiData3>
+          {/* <ApiData2></ApiData2>  */}
+          {/* <ApiData3></ApiData3> */}
+          {/* <HOC></HOC>
+          <Test></Test> */}
+          {/* <VideoPlayer></VideoPlayer> */}
       {/* <ComponentA/> */}
+
+
+      <Routes>
+        <Route path= "/about" element={<About></About>}></Route>
+        {/* <Route path="/home" element={<Home></Home>}></Route> */}
+        <Route path="/contact" element={<Contact></Contact>}></Route>
+        <Route path="/hooks" element={<Hooks></Hooks>}></Route>
+        <Route path="/hooks/:id" element={<HookDetail></HookDetail>}></Route>
+      </Routes> 
     </>
   )
 }

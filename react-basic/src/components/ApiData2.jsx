@@ -70,6 +70,12 @@ function ApiData2() {
             
           })
         }
+         {
+          posts.map((post, index) => {
+            return  <h3 key={index}>{post.reactions.likes}</h3> 
+            
+          })
+        }
         
         </>
   ); 
